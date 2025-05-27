@@ -1,29 +1,29 @@
 export const NavLinks = [
     {
         id: 1,
-        url: "#",
-        label: "Inicio",
+        url: "nuestros-servicios",
+        label: "Nuestros Servicios",
     },
     {
         id: 2,
-        url: "#",
-        label: "Servicios de Alquiler",
+        url: "/nosotros",
+        label: "Nosotros",
     },
-    {
-        id: 3,
-        url: "#",
-        label: "Servicios Audiovisuales",
-    },
-    {
-        id: 4,
-        url: "#",
-        label: "Nuestros planes de Servicios",
-    },
-    {
-        id: 5,
-        url: "#",
-        label: "Quienes somos",
-    },
+    // {
+    //     id: 3,
+    //     url: "#",
+    //     label: "Servicios Audiovisuales",
+    // },
+    // {
+    //     id: 4,
+    //     url: "#",
+    //     label: "Nuestros planes de Servicios",
+    // },
+    // {
+    //     id: 5,
+    //     url: "#",
+    //     label: "Quienes somos",
+    // },
     // {
     //     id: 6,
     //     url: "#",
