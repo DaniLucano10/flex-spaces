@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@Layer components {
+    .footer__link {
+        @apply text-white font-semibold cursor-pointer text-sm hover:text-orange-500 w-fit;
+    }
+}
