@@ -4,6 +4,7 @@ import Footer from './footer/Footer';
 import Services from './services/Services';
 import Benefits from './benefits/Benefits';
 import Price from './price/Price';
+import Questions from './questions/Questions';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Services />
       <Benefits />
       <Price />
+      <Questions />
       <Footer />
     </div>
   )
