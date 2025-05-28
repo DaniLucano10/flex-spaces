@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <Link
             href="/"
-            className="hidden md:block cursor-pointer"
+            className=" cursor-pointer"
             aria-label="Inicio"
           >
             <Logo />
