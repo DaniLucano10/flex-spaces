@@ -64,7 +64,7 @@ const Benefits = () => {
                 {/* Beneficio 3 */}
                 <article className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start px-4 md:px-0 text-left mt-12">
                     <div className="space-y-4">
-                        <h3 className="text-xl font-bold text-black">Confort</h3>
+                        <h3 className="text-xl font-bold text-black">Comfort</h3>
                         <p className="text-[#191919] text-base md:text-lg">
                             Nuestros espacios cuentan con las comodidades básicas:
                         </p>
