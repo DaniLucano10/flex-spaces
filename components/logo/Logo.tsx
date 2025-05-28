@@ -1,8 +1,8 @@
 // components/Logo.jsx
 const Logo = () => (
   <svg
-    width="200"
-    height="50"
+    width="150"
+    height="40"
     viewBox="0 0 700 125"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

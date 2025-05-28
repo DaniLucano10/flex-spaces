@@ -1,11 +1,10 @@
 "use client";
-import Isotipo from "@/components/logo/Isotipo";
+
 import Logo from "@/components/logo/Logo";
 import { NavLinks } from "@/constant/constant";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
-import { HiBars3BottomRight } from "react-icons/hi2";
+import { FaBars, FaWhatsapp } from "react-icons/fa";
 
 type Props = {
     openNav: () => void;
@@ -27,19 +26,16 @@ const Nav = ({ openNav }: Props) => {
     return (
         <div
             className={`transition-all ${navBg ? "bg-black shadow-md" : "fixed"
-                } duration-200 h-[12vh] z-[100] fixed w-full bg-black`}
+                } duration-200 h-[8vh] z-[100] fixed w-full bg-black`}
         >
             <div className="flex items-center h-full justify-between w-[90%]  mx-auto">
                 {/* LOGO */}
                 {/* Logo para desktop */}
-                <Link href="/" className="hidden md:block cursor-pointer">
+                <Link href="/" className=" cursor-pointer">
                     <Logo />
                 </Link>
 
-                {/* Isotipo para mobile */}
-                <Link href="/" className="block md:hidden cursor-pointer">
-                    <Isotipo />
-                </Link>
+               
 
                 {/* Aquí agrupamos NavLinks + botón en desktop */}
                 <div className="hidden lg:flex items-center">
@@ -61,7 +57,7 @@ const Nav = ({ openNav }: Props) => {
                         rel="noopener noreferrer"
                         className="ml-8"
                     >
-                        <button className="flex items-center gap-2 bg-[#943315] text-white px-4 py-2 rounded-md hover:bg-orange-900 transition-all duration-200">
+                        <button className="flex items-center gap-2 bg-[#943315] text-white px-4 py-1 cursor-pointer hover:bg-orange-900 transition-all duration-200">
                             <FaWhatsapp className="text-white text-2xl" />
                             +51 954 101 100
                         </button>
@@ -76,12 +72,11 @@ const Nav = ({ openNav }: Props) => {
                         rel="noopener noreferrer"
                         className="ml-8"
                     >
-                        <button className="flex items-center gap-2 bg-[#943315] text-white px-4 py-2 rounded-md hover:bg-orange-900 transition-all duration-200">
-                            <FaWhatsapp className="text-white text-xl" />
-                            +51 954 101 100
+                        <button className="flex items-center bg-[#943315] text-white px-1 py-1 hover:bg-orange-900 transition-all duration-200">
+                            <FaWhatsapp className="text-white text-2xl" />
                         </button>
                     </Link>
-                    <HiBars3BottomRight
+                    <FaBars
                         onClick={openNav}
                         className="w-8 h-8 cursor-pointer text-white"
                     />

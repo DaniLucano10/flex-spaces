@@ -2,11 +2,11 @@ import React from "react";
 
 const Map = () => {
   return (
-    <section className="pt-16 pb-8" aria-labelledby="map-title">
+    <section className="pt-12 pb-8" aria-labelledby="map-title">
       <div className="md:w-[70%] mx-auto px-4 text-center">
         <h2
           id="map-title"
-          className="text-2xl md:text-3xl font-bold text-[#ED8430] mb-4"
+          className="text-3xl font-extrabold text-[#ED8430] mb-4"
         >
           Encuéntranos En El Mapa
         </h2>

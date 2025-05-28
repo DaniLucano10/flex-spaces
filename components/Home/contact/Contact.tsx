@@ -10,12 +10,12 @@ const Contact = () => {
 
   return (
     <section className="pt-12 pb-16 bg-[#FFEADD]">
-      <div className="w-[85%] mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-[#943315] mb-10">
+      <div className="md:w-[85%] mx-auto px-4 text-center md:text-start">
+        <h2 className="text-3xl font-extrabold text-[#943315] mb-10">
           Contacta Un Asesor Comercial
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 order-2 md:order-1">
             <Image
               src="/images/home/asesora-fomr-1.webp"
               alt="Imagen asesora comercial"
@@ -25,13 +25,13 @@ const Contact = () => {
             />
           </div>
 
-          <div className="md:col-span-2 p-6">
+          <div className="md:col-span-2 order-1 md:order-2 p-6">
             <form aria-label="Formulario de contacto para asesor comercial">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="mb-1">
                   <label
                     htmlFor="nombre"
-                    className="block text-[#943315] text-lg font-bold mb-1"
+                    className="block text-[#943315] text-lg text-start font-bold mb-1"
                   >
                     Nombres y Apellidos
                   </label>
@@ -47,7 +47,7 @@ const Contact = () => {
                 <div className="mb-1">
                   <label
                     htmlFor="telefono"
-                    className="block text-[#943315] text-lg font-bold mb-1"
+                    className="block text-start text-[#943315] text-lg font-bold mb-1"
                   >
                     Teléfono
                   </label>
@@ -65,7 +65,7 @@ const Contact = () => {
               <div className="mb-2">
                 <label
                   htmlFor="email"
-                  className="block text-[#943315] text-lg font-bold mb-1"
+                  className="block text-start text-[#943315] text-lg font-bold mb-1"
                 >
                   Email
                 </label>
@@ -80,7 +80,7 @@ const Contact = () => {
               </div>
 
               <fieldset className="mb-2">
-                <legend className="block text-[#943315] text-lg font-bold mb-1">
+                <legend className="block text-start text-[#943315] text-lg font-bold mb-1">
                   ¿Qué servicio requiere?
                 </legend>
                 <div className="flex flex-col md:flex-row md:items-center md:gap-4">
@@ -111,7 +111,7 @@ const Contact = () => {
               <div className="mb-2">
                 <label
                   htmlFor="descripcion"
-                  className="block text-[#943315] text-lg font-bold mb-1"
+                  className="block text-start text-[#943315] text-lg font-bold mb-1"
                 >
                   Descripción
                 </label>
@@ -128,7 +128,7 @@ const Contact = () => {
               <div className="flex items-center w-full justify-center">
                 <button
                   type="submit"
-                  className="w-full md:w-auto bg-[#943315] text-white px-16 py-1 rounded hover:bg-orange-800"
+                  className="w-full md:w-auto bg-[#943315] text-white px-16 py-1 hover:bg-orange-800"
                 >
                   Enviar
                 </button>
