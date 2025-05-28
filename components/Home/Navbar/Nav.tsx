@@ -61,7 +61,7 @@ const Nav = ({ openNav }: Props) => {
                         rel="noopener noreferrer"
                         className="ml-8"
                     >
-                        <button className="flex items-center gap-2 bg-[#ED8430] text-white px-4 py-2 rounded-md hover:bg-orange-400 transition-all duration-200">
+                        <button className="flex items-center gap-2 bg-[#943315] text-white px-4 py-2 rounded-md hover:bg-orange-900 transition-all duration-200">
                             <FaWhatsapp className="text-white text-2xl" />
                             +51 954 101 100
                         </button>
@@ -76,7 +76,7 @@ const Nav = ({ openNav }: Props) => {
                         rel="noopener noreferrer"
                         className="ml-8"
                     >
-                        <button className="flex items-center gap-2 bg-[#ED8430] text-white px-4 py-2 rounded-md hover:bg-orange-400 transition-all duration-200">
+                        <button className="flex items-center gap-2 bg-[#943315] text-white px-4 py-2 rounded-md hover:bg-orange-900 transition-all duration-200">
                             <FaWhatsapp className="text-white text-xl" />
                             +51 954 101 100
                         </button>
