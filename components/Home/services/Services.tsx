@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 interface Service {
@@ -9,22 +10,22 @@ interface Service {
 const services: Service[] = [
   {
     title: "Auditorio",
-    image: "/image1.png",
+    image: "/images/home/auditorio-servicio-1.jpg",
     alt: "Auditorio con sillas y proyector",
   },
   {
     title: "Sala de capacitación",
-    image: "/image1.png",
+    image: "/images/home/Sala-capacitacion-servicio-2.jpg",
     alt: "Sala equipada para capacitación con mesas y sillas",
   },
   {
     title: "Laboratorio equipado",
-    image: "/image1.png",
+    image: "/images/home/laboratorio-equpado.jpg",
     alt: "Laboratorio con laptops en escritorios",
   },
   {
     title: "Sala de eventos corporativos",
-    image: "/image1.png",
+    image: "/images/home/sala-corporativa-servicio-4.jpg",
     alt: "Sala de eventos con sillas y alfombra roja",
   },
 ];
@@ -33,7 +34,7 @@ const Services = () => {
   return (
     <section className="pt-16 pb-16">
       <div className="w-[85%] mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-[#ED8430] mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#ED8430] mb-10">
           Nuestros Principales Servicios
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
