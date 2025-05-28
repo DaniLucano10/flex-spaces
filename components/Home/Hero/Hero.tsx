@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section
-      className="md:pt-16 mt-24 md:mt-16 relative"
+      className="md:pt-12 mt-24 md:mt-16 relative"
       id="hero"
       aria-labelledby="hero-title"
     >
@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="w-[90%] mx-auto px-10 py-12 md:py-36 relative overflow-hidden ">
         {/* Imagen de fondo interna */}
         <Image
-          src="/home.webp"
+          src="/images/home/espacios-flex-Banner-home.jpg"
           alt="Fondo de salas de capacitación y auditorios"
           fill
           className="object-cover -z-10"
