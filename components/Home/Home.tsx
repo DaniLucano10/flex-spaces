@@ -6,6 +6,7 @@ import Benefits from './benefits/Benefits';
 import Price from './price/Price';
 import Questions from './questions/Questions';
 import Contact from './contact/Contact';
+import Map from './map/Map';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Services />
       <Benefits />
       <Price />
+      <Map />
       <Questions />
       <Contact />
       <Footer />
