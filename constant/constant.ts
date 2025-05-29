@@ -1,7 +1,7 @@
 export const NavLinks = [
     {
         id: 1,
-        url: "nuestros-servicios",
+        url: "/nuestros-servicios",
         label: "Nuestros Servicios",
     },
     {
