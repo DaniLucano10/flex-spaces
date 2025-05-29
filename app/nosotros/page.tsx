@@ -10,7 +10,6 @@ const Page = () => {
   return (
     <main className="pb-4 pt-16">
       <Banner />
-      
       <TextWithImage />
       <Commitment />
       <Social />
