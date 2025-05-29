@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from './Hero/Hero';
-import Footer from './footer/Footer';
 import Services from './services/Services';
 import Benefits from './benefits/Benefits';
 import Price from './price/Price';
@@ -18,7 +17,6 @@ const Home = () => {
       <Map />
       <Questions />
       <Contact />
-      <Footer />
     </div>
   )
 }
