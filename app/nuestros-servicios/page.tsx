@@ -1,4 +1,3 @@
-"use client"
 
 import BannerService from "./components/BannerService"
 import Service from "./components/Service"
