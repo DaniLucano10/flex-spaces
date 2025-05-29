@@ -83,10 +83,13 @@ const Service = () => {
                         <p className="mt-1 text-lg">
                             Además contamos con un área común para en coffee break.
                         </p>
-                        <div className="w-full flex md:justify-start mt-6">
-                            <button className="w-full md:w-auto bg-[#943315] text-white px-8 py-2 hover:bg-orange-800 transition">
+                        <div className="w-full flex md:justify-end mt-6">
+                            <Link
+                                href="/nuestros-servicios/sala-capacitacion"
+                                className="w-full md:w-auto bg-[#943315] text-white px-8 py-2 hover:bg-orange-800 transition text-center"
+                            >
                                 Ver más información
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -137,10 +140,13 @@ const Service = () => {
                             Además contamos con un área común para en coffee break.
                         </p>
 
-                        <div className="w-full flex md:justify-end mt-6">
-                            <button className="w-full md:w-auto bg-[#943315] text-white px-8 py-2 hover:bg-orange-800 transition">
+                       <div className="w-full flex md:justify-end mt-6">
+                            <Link
+                                href="/nuestros-servicios/laboratorio"
+                                className="w-full md:w-auto bg-[#943315] text-white px-8 py-2 hover:bg-orange-800 transition text-center"
+                            >
                                 Ver más información
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -178,10 +184,13 @@ const Service = () => {
                             Brindamos servicio de soporte, y los equipos tecnológicos según se
                             requiera.
                         </p>
-                        <div className="w-full flex md:justify-start mt-6">
-                            <button className="w-full md:w-auto bg-[#943315] text-white px-8 py-2 hover:bg-orange-800 transition">
+                       <div className="w-full flex md:justify-end mt-6">
+                            <Link
+                                href="/nuestros-servicios/eventos"
+                                className="w-full md:w-auto bg-[#943315] text-white px-8 py-2 hover:bg-orange-800 transition text-center"
+                            >
                                 Ver más información
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
