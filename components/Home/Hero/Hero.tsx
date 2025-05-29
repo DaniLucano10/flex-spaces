@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section
-      className="pt-16 pb-4 mt-2 relative"
+      className="pt-16 pb-4 mt-4 relative"
       id="hero"
       aria-labelledby="hero-title"
     >
