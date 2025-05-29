@@ -3,27 +3,27 @@ import Image from "next/image";
 
 const galleryImages = [
     {
-        src: "/images/servicios/auditorio/auditorio-galeria-1.webp",
+        src: "/images/servicios/sala-de-capacitacion/sala-capacitacion-galeria-1.webp",
         alt: "Vista frontal del auditorio con sillas y proyector",
     },
     {
-        src: "/images/servicios/auditorio/auditorio-galeria-2.webp",
+        src: "/images/servicios/sala-de-capacitacion/sala-capacitacion-galeria-2.webp",
         alt: "Auditorio con iluminación ambiental y pantalla encendida",
     },
     {
-        src: "/images/servicios/auditorio/auditorio-galeria-3.webp",
+        src: "/images/servicios/sala-de-capacitacion/sala-capacitacion-galeria-3.webp",
         alt: "Vista lateral del auditorio mostrando el equipo tecnológico",
     },
     {
-        src: "/images/servicios/auditorio/auditorio-galeria-4.webp",
+        src: "/images/servicios/sala-de-capacitacion/sala-capacitacion-galeria-4.webp",
         alt: "Área común para coffee break junto al auditorio",
     },
     {
-        src: "/images/servicios/auditorio/auditorio-galeria-5.webp",
+        src: "/images/servicios/sala-de-capacitacion/sala-capacitacion-galeria-5.webp",
         alt: "Pizarra blanca con accesorios en el auditorio",
     },
     {
-        src: "/images/servicios/auditorio/auditorio-galeria-6.webp",
+        src: "/images/servicios/sala-de-capacitacion/sala-capacitacion-galeria-6.webp",
         alt: "Vista general del auditorio en uso durante una presentación",
     },
 ];
