@@ -1,4 +1,5 @@
 import Logo from "@/components/logo/Logo";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
@@ -9,34 +10,28 @@ const Footer = () => {
       <div className="w-[85%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-start">
         {/* 1st part */}
         <div>
-          <Link
-            href="/"
-            className=" cursor-pointer"
-            aria-label="Inicio"
-          >
+          <Link href="/" className=" cursor-pointer" aria-label="Inicio">
             <Logo />
           </Link>
           <p className="mt-4 text-gray-200 font-medium">
             Síguenos en nuestras redes:
           </p>
-          <div className="mt-6 flex items-center space-x-2">
+          <div className="flex items-center gap-4 mt-2">
             <a
-              href="https://facebook.com/tuempresa"
+              href="https://facebook.com/tu-pagina"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="flex items-center justify-center w-8 h-8 bg-blue-600 text-white rounded-full"
+              aria-label="Ir a nuestra página de Facebook"
             >
-              <FaFacebook />
+              <FaFacebook className="text-white hover:text-[#ED8430] text-4xl" />
             </a>
             <a
-              href="https://instagram.com/tuempresa"
+              href="https://instagram.com/tu-pagina"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="flex items-center justify-center w-8 h-8 bg-pink-500 text-white rounded-full"
+              aria-label="Ir a nuestro Instagram"
             >
-              <FaInstagram />
+              <FaInstagram className="text-white hover:text-[#ED8430] text-4xl" />
             </a>
           </div>
         </div>
@@ -118,13 +113,22 @@ const Footer = () => {
       </div>
 
       {/* bottom part */}
-      <div className="mt-8 w-[80%] mx-auto border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-        <p className="text-center text-white md:text-left">
+      <div className="mt-4 w-[85%] mx-auto pt-8 flex flex-col md:flex-row justify-between items-start md:items-center text-sm">
+        {/* Imagen primero en móvil */}
+        <div className="flex items-center text-white space-x-4 order-1 md:order-2 mb-4 md:mb-0">
+          <Image
+            src="/images/libro-de-reclamaciones-digital.svg"
+            alt="Libro de Reclamaciones"
+            width={164}
+            height={32}
+            className="object-contain cursor-pointer"
+          />
+        </div>
+
+        {/* Texto después en móvil */}
+        <p className="text-start text-white md:text-left order-2 md:order-1">
           ©2025 Especios Flex, todos los derechos reservados.
         </p>
-        <div className="flex items-center text-white space-x-4 mt-4 md:mt-0">
-          <span>Social:</span>
-        </div>
       </div>
     </footer>
   );
