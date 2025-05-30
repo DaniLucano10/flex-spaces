@@ -45,8 +45,13 @@ const Page = () => {
             fill
             className="object-cover"
             priority
+            data-aos="fade-right"
+            ata-aos-delay="100"
           />
-          <div className="absolute inset-0 flex items-center justify-start px-10">
+          <div
+            className="absolute inset-0 flex items-center justify-start px-10"
+            data-aos="fade-left"
+          >
             <h1 className="text-white text-3xl md:text-5xl font-bold md:text-start">
               Sala de Capacitación
             </h1>
@@ -86,7 +91,10 @@ const Page = () => {
       {/* Galería */}
       <div className="w-[85%] mx-auto mt-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <h2 className="text-[#943315] text-3xl md:text-4xl font-extrabold text-center md:text-start">
+          <h2
+            className="text-[#943315] text-3xl md:text-4xl font-extrabold text-center md:text-start"
+            data-aos="fade-left"
+          >
             Galería de fotos
           </h2>
           <div className="flex w-full md:w-auto gap-4 justify-between md:justify-start">
@@ -117,6 +125,9 @@ const Page = () => {
               tabIndex={0}
               role="group"
               aria-label={img.alt}
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="100"
             >
               <Image
                 src={img.src}
