@@ -50,8 +50,8 @@ const Services = () => {
                 {/* Overlay oscuro al hacer hover */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0" />
 
-                {/* Título superpuesto */}
-                <div className="absolute top-0 left-0 w-full h-18 md:h-20 bg-[#943315] group-hover:bg-transparent text-white pt-4 md:pt-4 font-semibold text-lg z-10 transition-all duration-300 text-center">
+                {/* Título superpuesto centrado */}
+                <div className="absolute top-0 left-0 w-full h-18 md:h-20 bg-[#943315] group-hover:bg-transparent text-white font-semibold text-lg z-10 transition-all duration-300 flex items-center justify-center text-center">
                   {service.title}
                 </div>
 

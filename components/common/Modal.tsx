@@ -37,7 +37,7 @@ const Modal = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4">
       <div
-        className={`relative w-full ${sizeClasses[size]} bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 border border-white/50`}
+        className={`relative w-full ${sizeClasses[size]} bg-white backdrop-blur-sm rounded-lg shadow-lg p-6 border`}
       >
         {/* Botón de cerrar */}
         <button
