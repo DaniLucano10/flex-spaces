@@ -114,6 +114,9 @@ const AuditorioPage = () => {
               tabIndex={0}
               role="group"
               aria-label={img.alt}
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="100"
             >
               <Image
                 src={img.src}
@@ -125,7 +128,7 @@ const AuditorioPage = () => {
           ))}
         </div>
       </div>
-      
+
       {/* Modal */}
       <Modal
         isOpen={isModalOpen}
