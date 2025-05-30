@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "@/components/home/navbar/ResponsiveNav";
 import WhatsAppButton from "@/components/shared/WhatsAppButton";
 import Footer from "@/components/home/footer/Footer";
+import AOSInitializer from "@/components/AOSInitializer";
 
 
 const font = Roboto({
@@ -82,6 +83,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/x-icon"/>
       </head>
       <body className={`${font.className} antialiased`}>
+        <AOSInitializer />
         <ResponsiveNav />
         {children}
         <WhatsAppButton />
