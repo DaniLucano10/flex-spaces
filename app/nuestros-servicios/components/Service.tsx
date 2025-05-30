@@ -105,7 +105,7 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <div className="space-y-12 py-12 bg-white">
+            <div className="space-y-12 py-12 bg-white -mt-10 md:mt-0">
                 {/* Auditorío */}
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-10">
                     {/* Título solo en móvil */}
