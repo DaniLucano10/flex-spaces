@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Service {
   title: string;
   image: string;
   alt: string;
+  link: string;
 }
 
 const services: Service[] = [
@@ -12,21 +14,25 @@ const services: Service[] = [
     title: "Auditorio",
     image: "/images/home/auditorio-servicio-1.jpg",
     alt: "Auditorio con sillas y proyector",
+    link: "/nuestros-servicios/auditorio",
   },
   {
     title: "Sala de capacitación",
     image: "/images/home/Sala-capacitacion-servicio-2.jpg",
     alt: "Sala equipada para capacitación con mesas y sillas",
+    link: "/nuestros-servicios/sala-capacitacion",
   },
   {
     title: "Laboratorio equipado",
     image: "/images/home/laboratorio-equpado.jpg",
     alt: "Laboratorio con laptops en escritorios",
+    link: "/nuestros-servicios/laboratorio",
   },
   {
     title: "Sala de eventos corporativos",
     image: "/images/home/sala-corporativa-servicio-4.jpg",
     alt: "Sala de eventos con sillas y alfombra roja",
+    link: "/nuestros-servicios/eventos",
   },
 ];
 
@@ -39,19 +45,27 @@ const Services = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {services.map((service, idx) => (
-            <div key={idx}>
-              <div className="bg-[#943315] text-white p-6 font-semibold text-sm">
-                {service.title}
+            <Link href={service.link} key={idx}>
+              <div key={idx} className="relative group overflow-hidden">
+                {/* Overlay oscuro al hacer hover */}
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0" />
+
+                {/* Título superpuesto */}
+                <div className="absolute top-0 left-0 w-full bg-[#943315] group-hover:bg-transparent text-white p-4 md:p-6 font-semibold text-sm z-10 transition-all duration-300">
+                  {service.title}
+                </div>
+
+                {/* Imagen */}
+                <Image
+                  src={service.image}
+                  alt={service.alt}
+                  width={300}
+                  height={200}
+                  className="w-full h-40 md:h-80 object-cover cursor-pointer z-0"
+                  priority
+                />
               </div>
-              <Image
-                src={service.image}
-                alt={service.alt}
-                width={300}
-                height={200}
-                className="w-full h-30 md:h-80 object-cover"
-                priority 
-              />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
