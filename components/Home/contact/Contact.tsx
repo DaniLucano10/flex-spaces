@@ -9,7 +9,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="pt-12 pb-16 bg-[#FFEADD]">
+    <section className="pt-12 pb-16 bg-[#FFEADD]" id="contact">
       <div className="md:w-[85%] mx-auto px-4 text-center md:text-start">
         <h2 className="text-3xl font-extrabold text-[#943315] mb-10">
           Contacta Un Asesor Comercial
@@ -128,7 +128,7 @@ const Contact = () => {
               <div className="flex items-center w-full justify-center">
                 <button
                   type="submit"
-                  className="w-full md:w-auto bg-[#943315] text-white px-16 py-1 hover:bg-orange-800"
+                  className="w-full md:w-auto bg-[#943315] font-bold text-white px-16 py-1 hover:bg-orange-900 cursor-pointer"
                 >
                   Enviar
                 </button>

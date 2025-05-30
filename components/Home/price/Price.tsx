@@ -97,7 +97,10 @@ const Price = () => (
               </div>
               <div>
                 {features.map((text, i) => (
-                  <div key={text} className="flex items-start gap-2 mb-2 md:pl-4">
+                  <div
+                    key={text}
+                    className="flex items-start gap-2 mb-2 md:pl-4"
+                  >
                     <div
                       aria-hidden="true"
                       className={`w-3 h-3 mt-1 ${
@@ -110,9 +113,12 @@ const Price = () => (
                   </div>
                 ))}
                 <div className="flex justify-center md:justify-end pt-2">
-                  <button className="bg-[#943315] hover:bg-orange-900 text-white font-bold py-1 px-6">
+                  <a
+                    href="#contact"
+                    className="bg-[#943315] hover:bg-orange-900 text-white font-bold py-1 px-6 cursor-pointer inline-block"
+                  >
                     Más información
-                  </button>
+                  </a>
                 </div>
               </div>
             </article>

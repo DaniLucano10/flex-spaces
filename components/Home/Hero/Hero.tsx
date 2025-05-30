@@ -3,6 +3,7 @@
 import Modal from "@/components/common/Modal";
 import ReservationForm from "@/components/common/ReservationForm";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Hero = () => {
@@ -26,9 +27,9 @@ const Hero = () => {
           sizes="100vw"
         />
 
-        <div className="text-white relative z-10 text-center md:text-left">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10 md:relative md:items-start md:justify-start md:text-left">
           <h1
-            className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight"
+            className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight"
             id="hero-title"
           >
             Reserva salas de
@@ -37,26 +38,33 @@ const Hero = () => {
           </h1>
           <div className="mt-6 flex gap-4 justify-center md:justify-start">
             <button
-              className="bg-[#943315] font-bold hover:bg-orange-800 text-white px-8 py-1 cursor-pointer"
+              className="bg-[#943315] font-bold hover:bg-orange-900 text-white px-8 py-1 cursor-pointer"
               onClick={() => setIsModalOpen(true)}
             >
               Reservar
             </button>
-            <button className="border border-[#ED8430] font-bold text-white px-8 py-1 cursor-pointer">
-              Cotizar
-            </button>
+            <Link
+              href="https://wa.me/51954101100"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-8"
+            >
+              <button className="border border-[#ED8430] font-bold text-white px-8 py-1 cursor-pointer">
+                Cotizar
+              </button>
+            </Link>
           </div>
         </div>
-        {/* Modal */}
-        <Modal
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
-          title="Contacta Un Asesor Comercial"
-          size="xl"
-        >
-          <ReservationForm />
-        </Modal>
       </div>
+      {/* Modal */}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Contacta Un Asesor Comercial"
+        size="xl"
+      >
+        <ReservationForm />
+      </Modal>
     </section>
   );
 };
