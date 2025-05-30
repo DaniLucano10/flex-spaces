@@ -1,6 +1,13 @@
+"use client";
+
+import Modal from "@/components/common/Modal";
+import ReservationForm from "@/components/common/ReservationForm";
 import Image from "next/image";
+import { useState } from "react";
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section
       className="pt-16 pb-4 mt-4 relative"
@@ -29,7 +36,10 @@ const Hero = () => {
             capacitación y auditorios
           </h1>
           <div className="mt-6 flex gap-4 justify-center md:justify-start">
-            <button className="bg-[#943315] font-bold hover:bg-orange-800 text-white px-8 py-1 cursor-pointer">
+            <button
+              className="bg-[#943315] font-bold hover:bg-orange-800 text-white px-8 py-1 cursor-pointer"
+              onClick={() => setIsModalOpen(true)}
+            >
               Reservar
             </button>
             <button className="border border-[#ED8430] font-bold text-white px-8 py-1 cursor-pointer">
@@ -37,6 +47,15 @@ const Hero = () => {
             </button>
           </div>
         </div>
+        {/* Modal */}
+        <Modal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          title="Contacta Un Asesor Comercial"
+          size="xl"
+        >
+          <ReservationForm />
+        </Modal>
       </div>
     </section>
   );
