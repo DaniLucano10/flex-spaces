@@ -55,7 +55,7 @@ const Questions = () => {
 
   return (
     <section className="pt-16 pb-12">
-      <div className="w-[85%] mx-auto px-4 text-center">
+      <div className="w-[100%] md:w-[85%] mx-auto px-4 text-center">
         <h2 className="text-3xl font-extrabold text-[#ED8430] mb-8">
           Preguntas Frecuentes
         </h2>
