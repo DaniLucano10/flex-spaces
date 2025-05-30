@@ -32,7 +32,7 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex items-center h-full justify-between w-[90%]  mx-auto">
         {/* LOGO */}
         {/* Logo para desktop */}
-        <Link href="/" className=" cursor-pointer">
+        <Link href="/" className=" cursor-pointer" aria-label="Inicio">
           <Logo />
         </Link>
 
