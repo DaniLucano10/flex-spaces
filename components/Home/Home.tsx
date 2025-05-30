@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './Hero/Hero';
+import Hero from './hero/Hero';
 import Services from './services/Services';
 import Benefits from './benefits/Benefits';
 import Price from './price/Price';
