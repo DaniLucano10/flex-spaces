@@ -46,7 +46,9 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {services.map((service, idx) => (
             <Link href={service.link} key={idx}>
-              <div key={idx} className="relative group overflow-hidden">
+              <div key={idx} className="relative group overflow-hidden" data-aos="fade-up"
+              data-aos-delay={idx * 100}
+              itemScope>
                 {/* Overlay oscuro al hacer hover */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0" />
 

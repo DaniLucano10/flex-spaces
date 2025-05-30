@@ -30,6 +30,8 @@ const Benefits = () => {
                         width={600}
                         height={400}
                         className="w-full h-30 md:h-54  object-cover"
+                        data-aos="zoom-in-down"
+                        data-aos-delay="100"
                         priority
                     />
                 </article>
@@ -57,6 +59,8 @@ const Benefits = () => {
                         height={400}
                         className="w-full h-30 md:h-54 object-cover order-2 md:order-1"
                         loading="lazy"
+                        data-aos="zoom-in-down"
+                        data-aos-delay="100"
                     />
                 </article>
 
@@ -81,6 +85,8 @@ const Benefits = () => {
                         height={400}
                         className="w-full h-30 md:h-54 object-cover"
                         loading="lazy"
+                        data-aos="zoom-in-down"
+                        data-aos-delay="100"
                     />
                 </article>
             </div>

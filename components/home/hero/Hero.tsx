@@ -25,9 +25,11 @@ const Hero = () => {
           className="object-cover -z-10"
           priority
           sizes="100vw"
+          data-aos="fade-right"
+          ata-aos-delay="100"
         />
 
-        <div className="absolute inset-0 flex flex-col items-center pt-10 md:pt-0  text-white text-center z-10 md:relative md:items-start md:justify-start md:text-left">
+        <div className="absolute inset-0 flex flex-col items-center pt-10 md:pt-0  text-white text-center z-10 md:relative md:items-start md:justify-start md:text-left" data-aos="fade-left">
           <h1
             className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight"
             id="hero-title"
