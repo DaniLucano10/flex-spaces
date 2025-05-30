@@ -32,7 +32,7 @@ const galleryImages = [
   },
 ];
 
-const AuditorioPage = () => {
+const Page = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -143,4 +143,4 @@ const AuditorioPage = () => {
   );
 };
 
-export default AuditorioPage;
+export default Page;

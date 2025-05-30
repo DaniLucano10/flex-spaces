@@ -32,7 +32,7 @@ const galleryImages = [
   },
 ];
 
-const AuditorioPage = () => {
+const Page = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section className="pb-4 pt-16">
@@ -142,4 +142,4 @@ const AuditorioPage = () => {
   );
 };
 
-export default AuditorioPage;
+export default Page;
