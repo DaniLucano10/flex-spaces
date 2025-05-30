@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-1 order-2 md:order-1">
             <Image
-              src="/images/home/asesora-fomr-1.webp"
+              src="/images/home/asesora-form-1.webp"
               alt="Imagen asesora comercial"
               width={500}
               height={500}

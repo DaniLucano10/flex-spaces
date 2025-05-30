@@ -3,7 +3,7 @@ import Image from "next/image";
 const Benefits = () => {
     return (
         <section className="pt-0 md:pt-8 pb-8">
-            <div className="w-[85%] mx-auto px-4 text-center">
+            <div className="w-[75%] mx-auto px-4 text-center">
                 <h2 className="text-3xl font-extrabold text-[#ED8430] mb-6 md:mb-12">
                     Beneficios que ofrecemos
                 </h2>

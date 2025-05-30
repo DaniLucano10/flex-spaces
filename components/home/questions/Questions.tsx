@@ -78,7 +78,7 @@ const Questions = () => {
                     }`}
                     size={24}
                   />
-                  <span className="text-sm sm:text-base font-medium break-words">
+                  <span className="text-sm sm:text-base font-medium break-words hover:text-[#943315] cursor-pointer">
                     {faq.question}
                   </span>
                 </button>

@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <section
-      className="pt-16 pb-4 mt-4 relative"
+      className="pt-16 pb-4 mt-6 sm:mt-4 md:mt-10 lg:mt-6 xl:mt-4 relative"
       id="hero"
       aria-labelledby="hero-title"
     >

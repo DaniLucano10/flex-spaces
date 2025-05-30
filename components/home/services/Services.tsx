@@ -39,8 +39,8 @@ const services: Service[] = [
 const Services = () => {
   return (
     <section className="pt-16 pb-16">
-      <div className="w-[85%] mx-auto px-4 text-center">
-        <h2 className="text-3xl font-extrabold text-[#ED8430] mb-10">
+      <div className="w-[85%] md:w-[75%] mx-auto px-4 text-center">
+        <h2 className="text-2xl font-extrabold text-[#ED8430] mb-10">
           Nuestros Principales Servicios
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -51,7 +51,7 @@ const Services = () => {
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0" />
 
                 {/* Título superpuesto */}
-                <div className="absolute top-0 left-0 w-full bg-[#943315] group-hover:bg-transparent text-white p-4 md:p-6 font-semibold text-sm z-10 transition-all duration-300">
+                <div className="absolute top-0 left-0 w-full h-18 md:h-20 bg-[#943315] group-hover:bg-transparent text-white pt-4 md:pt-4 font-semibold text-lg z-10 transition-all duration-300 text-center">
                   {service.title}
                 </div>
 
@@ -61,7 +61,7 @@ const Services = () => {
                   alt={service.alt}
                   width={300}
                   height={200}
-                  className="w-full h-40 md:h-80 object-cover cursor-pointer z-0"
+                  className="w-full h-50 md:h-80 object-cover cursor-pointer z-0"
                   priority
                 />
               </div>
