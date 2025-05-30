@@ -1,11 +1,11 @@
-import React from 'react'
-import Hero from './hero/Hero';
-import Services from './services/Services';
-import Benefits from './benefits/Benefits';
-import Price from './price/Price';
-import Questions from './questions/Questions';
-import Contact from './contact/Contact';
-import Map from './map/Map';
+import Benefits from "./benefits/Benefits";
+import Contact from "./contact/Contact";
+import Hero from "./hero/Hero";
+import Map from "./map/Map";
+import Price from "./price/Price";
+import Questions from "./questions/Questions";
+import Services from "./services/Services";
+
 
 const Home = () => {
   return (
