@@ -1,41 +1,50 @@
 import { NavLinks } from '@/constant/constant';
 import Link from 'next/link';
-import React from 'react'
-import { CgClose } from 'react-icons/cg';
+import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 type Props = {
   showNav: boolean;
   closeNav: () => void;
 };
 
-const MobileNav = ({ closeNav, showNav }: Props) => {
+const MobileNav = ({ showNav, closeNav }: Props) => {
+  const navOpen = showNav
+    ? 'translate-y-0 opacity-100'
+    : '-translate-y-8 opacity-0 pointer-events-none';
 
-  const navOpen = showNav ? 'translate-x-0' : 'translate-x-[-100%]';
   return (
-    <div>
-      {/* Overlay */}
-      <div className={`fixed ${navOpen} inset-0 transform transition-all duration-500 z-[1002] bg-black opacity-70 w-full h-screen`}></div>
-      {/* NavLinks */}
-      <div className={`text-white ${navOpen} fixed justify-center flex flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-orange-900 space-y-6 z-[1050]`}>
-        {NavLinks.map((link) => {
-          return (
+    <div className="fixed top-[8vh] left-0 z-[1050] w-full sm:w-[60%] bg-[#943315] text-white transition-all transform duration-500 ease-in-out">
+      <div
+        className={`p-8 transition-all duration-500 ease-in-out ${navOpen}`}
+      >
+        <div className="flex flex-col space-y-4">
+          {NavLinks.map((link) => (
             <Link
               key={link.id}
               href={link.url}
-              className='text-2xl font-bold text-center py-4 hover:bg-orange-900 transition-all duration-300'
+              onClick={closeNav}
+              className="text-xl sm:text-2xl font-semibold px-4 py-2 transition"
             >
-              <p className='text-white w-fit text-lg ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px]'>
-                {link.label}
-              </p>
+              <p className="pb-1 text-center">{link.label}</p>
             </Link>
-          )
-        })}
+          ))}
 
-        {/* Cross icon for close thr navbar */}
-        <CgClose onClick={closeNav} className='absolute top-[0.7rem] right-[1.4rem] sm:w-8 sm:h-8 w-6 h-6'/>
+          {/* WhatsApp */}
+          <Link
+            href="https://wa.me/51954101100"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeNav}
+            className="flex items-center justify-center gap-2 bg-black px-4 py-3 transition-all duration-200 text-white font-semibold cursor-pointer"
+          >
+            <FaWhatsapp className="text-2xl" />
+            +51 954 101 100
+          </Link>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default MobileNav;
