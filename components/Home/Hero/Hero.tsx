@@ -16,7 +16,7 @@ const Hero = () => {
       aria-labelledby="hero-title"
     >
       {/* Contenedor con imagen de fondo y contenido */}
-      <div className="w-[90%] mx-auto px-10 py-12 md:py-36 relative overflow-hidden min-h-[400px] md:min-h-[300px]">
+      <div className="w-[90%] mx-auto px-10 py-12 md:py-36 relative overflow-hidden min-h-[400px] md:min-h-[500px]">
         {/* Imagen de fondo interna */}
         <Image
           src="/images/home/espacios-flex-Banner-home.jpg"
@@ -27,7 +27,7 @@ const Hero = () => {
           sizes="100vw"
         />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10 md:relative md:items-start md:justify-start md:text-left">
+        <div className="absolute inset-0 flex flex-col items-center pt-10 md:pt-0  text-white text-center z-10 md:relative md:items-start md:justify-start md:text-left">
           <h1
             className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight"
             id="hero-title"
