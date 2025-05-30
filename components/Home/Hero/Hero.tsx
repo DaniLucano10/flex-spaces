@@ -44,7 +44,7 @@ const Hero = () => {
               Reservar
             </button>
             <Link
-              href="https://wa.me/51954101100"
+              href="https://wa.me/+51954101100"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-8"

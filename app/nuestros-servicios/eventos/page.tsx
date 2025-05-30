@@ -1,5 +1,9 @@
 "use client";
+import Modal from "@/components/common/Modal";
+import ReservationForm from "@/components/common/ReservationForm";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const galleryImages = [
   {
@@ -29,6 +33,8 @@ const galleryImages = [
 ];
 
 const AuditorioPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="pb-4 pt-16">
       {/* Banner */}
@@ -86,12 +92,22 @@ const AuditorioPage = () => {
             Galería de fotos
           </h2>
           <div className="flex w-full md:w-auto gap-4 justify-between md:justify-start">
-            <button className="bg-[#943315] font-bold hover:bg-orange-800 text-white px-8 py-1 cursor-pointer">
+            <button
+              className="bg-[#943315] font-bold hover:bg-orange-900 text-white px-8 py-1 cursor-pointer"
+              onClick={() => setIsModalOpen(true)}
+            >
               Reservar
             </button>
-            <button className="border border-[#ED8430] font-bold text-[#943315] px-8 py-1 cursor-pointer">
-              Cotizar
-            </button>
+            <Link
+              href="https://wa.me/+51954101100"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-8"
+            >
+              <button className="border border-[#ED8430] font-bold text-[#943315] px-8 py-1 cursor-pointer">
+                Cotizar
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -114,6 +130,16 @@ const AuditorioPage = () => {
           ))}
         </div>
       </div>
+
+      {/* Modal */}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Contacta Un Asesor Comercial"
+        size="xl"
+      >
+        <ReservationForm />
+      </Modal>
     </section>
   );
 };
