@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/footer/Footer";
+import WhatsAppButton from "@/components/shared/WhatsAppButton";
 
 const font = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -82,6 +83,7 @@ export default function RootLayout({
       <body className={`${font.className} antialiased`}>
         <ResponsiveNav />
         {children}
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>
