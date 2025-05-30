@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import ResponsiveNav from "@/components/tempHome/navbar/ResponsiveNav";
+import ResponsiveNav from "@/components/home/navbar/ResponsiveNav";
 import WhatsAppButton from "@/components/shared/WhatsAppButton";
-import Footer from "@/components/tempHome/footer/Footer";
+import Footer from "@/components/home/footer/Footer";
 
 
 const font = Roboto({
