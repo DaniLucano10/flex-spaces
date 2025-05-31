@@ -10,7 +10,7 @@ const ContactForm = () => {
 
   return (
     <section className="pt-12">
-      <div className="md:w-[70%] mx-auto px-4 text-center md:text-start">
+      <div className="md:w-[70%] mx-auto px-4 text-center md:text-start" >
         <h2 className="text-3xl font-extrabold text-[#ED8430] mb-1 text-center">
           Contacta Un Asesor Comercial
         </h2>

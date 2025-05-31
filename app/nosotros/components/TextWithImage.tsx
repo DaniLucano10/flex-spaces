@@ -12,13 +12,19 @@ const TextWithImage = () => {
 
       {/* Título Secundario */}
       <section className="w-[85%] mx-auto mt-6 md:mt-10 text-center md:text-start">
-        <h2 className="text-xl md:text-3xl text-[#ED8430] font-semibold">
+        <h2
+          className="text-xl md:text-3xl text-[#ED8430] font-semibold"
+          data-aos="fade-up"
+        >
           Somos más que una plataforma de alquiler de aulas
         </h2>
       </section>
 
       {/* Contenido principal: texto + imagen */}
-      <div className="w-[90%] md:w-[85%] mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-20 mt-4">
+      <div
+        className="w-[90%] md:w-[85%] mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-20 mt-4"
+        data-aos="fade-up"
+      >
         {/* Texto descriptivo */}
         <article className="md:w-1/2 text-justify text-base md:text-lg leading-relaxed space-y-8 text-[#313131]">
           <p>
@@ -47,9 +53,12 @@ const TextWithImage = () => {
             proyectos más grandes!
           </p>
         </article>
-
         {/* Imagen ilustrativa */}
-        <div className="md:w-1/2 w-full h-64 md:h-110 relative overflow-hidden">
+        <div
+          className="md:w-1/2 w-full h-64 md:h-110 relative overflow-hidden"
+          data-aos="fade-down"
+          data-aos-delay="150"
+        >
           <Image
             src="/images/nosotros/Espacios-flex-oficina.webp"
             alt="Ambiente profesional de oficina con aulas modernas y espacios colaborativos"
@@ -60,7 +69,7 @@ const TextWithImage = () => {
       </div>
 
       {/* Banner inferior con texto destacado */}
-      <div className="w-[90%] md:w-[70%] mx-auto text-center mt-16 md:mt-20">
+      <div className="w-[90%] md:w-[70%] mx-auto text-center mt-16 md:mt-20" data-aos="zoom-in">
         <div className="relative w-full h-28 md:h-56 overflow-hidden">
           <Image
             src="/images/nosotros/Rectangle-84.webp"

@@ -68,6 +68,9 @@ const Price = () => (
             <article
               key={id}
               className="bg-white p-6 rounded-lg w-full max-w-md text-left"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="100"
             >
               <header className="flex flex-col md:flex-row items-center md:items-center md:justify-between mb-4">
                 <h3 className="text-2xl font-extrabold">

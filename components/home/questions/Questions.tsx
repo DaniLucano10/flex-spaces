@@ -5,7 +5,8 @@ import { FiChevronDown } from "react-icons/fi";
 
 const faqs = [
   {
-    question: "¿Puedo reservar una sala de reuniones para un día en Espacios Flex?",
+    question:
+      "¿Puedo reservar una sala de reuniones para un día en Espacios Flex?",
     answer:
       "Todas nuestras salas de reuniones están disponibles por horas o por días y noches. Por ello, si necesita alquilar un espacio para reuniones, podemos ayudarle a encontrar la opción que mejor se adapte a sus necesidades en Espacios Flex.",
   },
@@ -25,7 +26,8 @@ const faqs = [
       "Sí, puede reservar una sala de reuniones desde un período mínimo de una hora hasta una semana completa en nuestros centros de negocios en Espacios Flex. Solo tendrá que hacer una reserva en línea, por teléfono o correo eléctronico.",
   },
   {
-    question: "¿Es necesario reservar una sala de reuniones en Espacios Flex con antelación?",
+    question:
+      "¿Es necesario reservar una sala de reuniones en Espacios Flex con antelación?",
     answer:
       "Le recomendamos que reserve su sala de reuniones con antelación para asegurarse de que haya un espacio disponible para usted y sus invitados. Si reserva con antelación, también podrá personalizar la distribución de la sala y contratar servicios de catering o refrescos.",
   },
@@ -35,7 +37,8 @@ const faqs = [
       "Nuestras salas están totalmente equipadas con mobiliario moderno y equipos de videoconferencia, por lo que tan solo tendrá que acudir al centro y ponerse manos a la obra. También podemos gestionar la instalación de pizarras, rotafolios, pantallas audiovisuales y proyectores en su espacio si los necesita, alquiler de laptops para los participantes, entre otros. Solo contáctanos.",
   },
   {
-    question: "¿Cuál es el mínimo de tiempo durante el que puedo alquilar una sala de reuniones?",
+    question:
+      "¿Cuál es el mínimo de tiempo durante el que puedo alquilar una sala de reuniones?",
     answer:
       "Nuestras salas de reuniones están disponibles por horas, lo que le garantiza que solo pagará por el tiempo y el espacio que necesite.",
   },
@@ -78,7 +81,12 @@ const Questions = () => {
                     }`}
                     size={24}
                   />
-                  <span className="text-sm sm:text-base font-medium break-words hover:text-[#943315] cursor-pointer">
+                  <span
+                    className="text-sm sm:text-base font-medium break-words hover:text-[#943315] cursor-pointer"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                  >
                     {faq.question}
                   </span>
                 </button>

@@ -24,11 +24,12 @@ const Contact = () => {
                 height={500}
                 className="w-full h-full object-cover"
                 priority
+                data-aos="fade-right"
               />
             </div>
           </div>
 
-          <div className="md:col-span-2 order-1 md:order-2 p-6">
+          <div className="md:col-span-2 order-1 md:order-2 p-6" data-aos="fade-left">
             <form aria-label="Formulario de contacto para asesor comercial">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="mb-1">

@@ -11,32 +11,38 @@ const Commitment = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
         {/* Elemento 1 */}
-        <div className="flex flex-col-reverse md:flex-row items-start gap-6 md:gap-0">
-          {/* Imagen */}
-          <div className="w-full md:w-1/2 h-48 md:h-64 relative">
-            <Image
-              src="/images/nosotros/Soporte-especios-flex.webp"
-              alt="Icono compromiso 1"
-              fill
-              className="object-contain"
-            />
-          </div>
+        <div data-aos="fade-right">
+          <div className="flex flex-col-reverse md:flex-row items-start gap-6 md:gap-0">
+            {/* Imagen */}
+            <div className="w-full md:w-1/2 h-48 md:h-64 relative">
+              <Image
+                src="/images/nosotros/Soporte-especios-flex.webp"
+                alt="Icono compromiso 1"
+                fill
+                className="object-contain"
+              />
+            </div>
 
-          {/* Texto */}
-          <div className="w-full md:w-1/2 mt-4 md:mt-0">
-            <h3 className="text-lg font-extrabold text-black">Soporte TI</h3>
-            <p className="text-base mt-4 text-justify">
-              Contamos con un equipo de soporte disponible en cualquier momento
-              mientras realices uso de nuestros espacios.
-            </p>
-            <p className="text-base mt-6 text-justify">
-              Brindamos garantía de seguridad y mantenimiento de nuestros equipos.
-            </p>
+            {/* Texto */}
+            <div className="w-full md:w-1/2 mt-4 md:mt-0">
+              <h3 className="text-lg font-extrabold text-black">Soporte TI</h3>
+              <p className="text-base mt-4 text-justify">
+                Contamos con un equipo de soporte disponible en cualquier
+                momento mientras realices uso de nuestros espacios.
+              </p>
+              <p className="text-base mt-6 text-justify">
+                Brindamos garantía de seguridad y mantenimiento de nuestros
+                equipos.
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Elemento 2 */}
-        <div className="flex flex-col-reverse md:flex-row items-start gap-6 md:gap-0">
+        <div
+          className="flex flex-col-reverse md:flex-row items-start gap-6 md:gap-0"
+          data-aos="fade-left"
+        >
           <div className="w-full md:w-1/2 h-48 md:h-64 relative">
             <Image
               src="/images/nosotros/laptops-espacios-flex.webp"

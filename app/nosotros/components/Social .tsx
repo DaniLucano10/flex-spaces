@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 const Social = () => {
   return (
     <section className="pt-6 pb-2 mt-8 bg-black" aria-labelledby="social-contact">
-      <div className="w-[90%] mx-auto p-8">
+      <div className="w-[90%] mx-auto p-8" data-aos="zoom-in">
         <h2
           id="social-contact"
           className="text-white text-xl md:text-3xl font-semibold text-start"
